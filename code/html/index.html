@@ -81,7 +81,7 @@
             <h1>Ejemplo de uso de la etiqueta &lt;pre&gt; en HTML5</h1>
     
     <p>El siguiente es un fragmento de código HTML:</p>
-    
+    <!--etiqueta pre-->
     <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="es"&gt;
@@ -94,7 +94,21 @@
     &lt;h1&gt;Hola, Mundo!&lt;/h1&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-    </pre>            
+    </pre>     
+    <!--etiqueta picture--> 
+    <h1>Ejemplo de uso de la etiqueta &lt;picture&gt;</h1>
+    
+    <picture>
+        <!-- Imagen para pantallas grandes (desktops) -->
+        <source srcset="img/imagen-grande.png" media="(min-width: 1024px)">
+        <!-- Imagen para tablets (pantallas medianas) -->
+        <source srcset="img/imagen-mediana.png" media="(min-width: 768px)">
+        <!-- Imagen para pantallas pequeñas (móviles) -->
+        <source srcset="img/imagen-pequeña.png" media="(max-width: 767px)">
+        
+        <!-- Imagen de respaldo si el navegador no soporta <picture> -->
+        <img src="img/imagen.png" alt="Ejemplo de imagen responsiva">
+    </picture>      
             <ul>
                 <li>Frutas
                     <ul>
